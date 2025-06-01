@@ -93,14 +93,15 @@ section.hero {
 }
 
 section.hero picture {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-section.hero img {
+.hero-image {
   width: 100%;
   height: auto;
   filter: brightness(50%);
+  aspect-ratio: 2160 / 1005;
 }
 
 section.hero img.desktop {
@@ -475,6 +476,10 @@ footer .copyright-text {
     display: inline-block;
   }
 
+  .hero-image {
+    aspect-ratio: 960 / 770;
+  }
+
   .hero-content h1 {
     font-size: 40px;
     letter-spacing: 1px;
@@ -606,7 +611,10 @@ footer .copyright-text {
     width: 7px;
     height: 7px;
   }
-}
+
+  .hero-image {
+    aspect-ratio: 1 / 1;
+  }
 
   .hero-content {
     position: static;

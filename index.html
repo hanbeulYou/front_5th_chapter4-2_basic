@@ -45,6 +45,9 @@
         website_name: "Performance Course",
       });
     </script>
+    <link rel="preload" as="image" href="images/Hero_Desktop.webp" />
+    <link rel="preload" as="image" href="images/Hero_Tablet.webp" />
+    <link rel="preload" as="image" href="images/Hero_Mobile.webp" />
   </head>
 
   <body>
@@ -91,10 +94,9 @@
         <!-- 데스크탑 (기본 fallback) -->
         <img
           src="images/Hero_Desktop.webp"
-          width="2160"
-          height="1005"
+          sizes="100vw"
           alt="Hero Image"
-          style="width: 100%; height: auto; filter: brightness(50%)"
+          style="width: 100vw; height: auto; filter: brightness(50%)"
         />
       </picture>
 

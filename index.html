@@ -31,6 +31,27 @@
       href="images/Hero_Mobile.webp"
       media="(max-width: 576px)"
     />
+
+    <style>
+      .hero-image {
+        width: 100%;
+        height: auto;
+        filter: brightness(50%);
+        aspect-ratio: 2160 / 1005;
+      }
+
+      @media screen and (max-width: 960px) {
+        .hero-image {
+          aspect-ratio: 960 / 770;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .hero-image {
+          aspect-ratio: 1 / 1;
+        }
+      }
+    </style>
     <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
     <!-- Google Tag Manager -->
     <script>
@@ -52,7 +73,7 @@
       type="text/javascript"
       src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
       charset="UTF-8"
-      async
+      defer
     ></script>
     <script type="text/javascript" charset="UTF-8">
       cookieconsent.run({
